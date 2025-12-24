@@ -5,7 +5,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from stable_baselines3 import PPO
 from stable_baselines3.common.monitor import Monitor
+
 from env import BuildingEnv
+from settings import PROJECT_ROOT
 
 
 def moving_average(values, window):
@@ -16,8 +18,7 @@ def moving_average(values, window):
 log_dir = "../logs"
 os.makedirs(log_dir, exist_ok=True)
 
-config_path = "config.json"
-with open(config_path, "r") as f:
+with open("config.json", "r") as f:
     config = json.load(f)
 
 env = BuildingEnv(config)
@@ -55,7 +56,5 @@ plt.ylabel('Reward')
 plt.title('Training Reward per Episode')
 plt.legend()
 plt.grid(True)
-plt.savefig('../results/training_reward.png')
+plt.savefig(os.path.join(PROJECT_ROOT, 'results', 'training_reward.png'))
 plt.show()
-
-
