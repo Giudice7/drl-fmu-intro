@@ -123,3 +123,4 @@ poetry run python src/deploy.py
 
 This generates deployment_results.png, showing temperature profiles, HVAC actions, and cost optimization.
 
+![](results/deployment_results.png)
