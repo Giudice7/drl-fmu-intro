@@ -11,6 +11,9 @@ fmpy = "^0.3.27"
 gymnasium = "^1.2.3"
 stable-baselines3 = "^2.7.1"
 loguru = "^0.7.3"
+numpy = "^2.4.0"
+matplotlib = "^3.10.8"
+pandas = "^2.3.3"
 
 
 [build-system]
