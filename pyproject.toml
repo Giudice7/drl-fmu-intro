@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "drl-fmu-intro"
+version = "0.1.0"
+description = ""
+authors = ["Giudice7 <rocco.giudice7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fmpy = "^0.3.27"
+gymnasium = "^1.2.3"
+stable-baselines3 = "^2.7.1"
+loguru = "^0.7.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
