@@ -31,6 +31,7 @@ The simulation environment is based on a 2R1C (2-Resistor, 1-Capacitor) lumped p
 | Output (Obs) | rad_heat | Heating Power Output  | W  |
 | Output (Obs) | occ  |  Occupancy Status (1=Present) | Boolean |
 
+![](model.png)
 
 ## 🧠 Control Problem & Algorithm
 
